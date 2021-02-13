@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    text-align: center;
+    background-color: darkslategrey;
+    color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    padding: 1.6rem 0;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* Header Part Start */
+header{
+    height: 45rem;
+}
+
+header .bg-image{
+    position: absolute; /* all items will keep on the picture  */
+    background-image: url(img/bg);
+    background-position: center;
+    background-size: cover;
+    height: 45rem;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+header h1 {
+    padding: 12rem;
+    padding-bottom: 0;
+}
+
+.btn{
+    display: inline-block;
+    background: black;
+    color:wheat;
+    border:1px dotted 4rem;
+    margin: 0.5rem 0;
+    transition: all 0.4s;
+}
+
+.btn:hover{
+    background-color: wheat;
+    color:black;
+}
+
+/* Header Part End */
+
+/* SectionA Part Start */
+#section_A{
+    background-color: wheat;
+    color: darkred;
+    padding: 2rem 0;
+}
+
+/* SectionA Part End */
+
+/* SectionB Part Start */
+#section_B{
+    padding: 2rem;
+
+}
+#section_B ul{
+    list-style: none;    
+}
+
+#section_B li{
+    background-color: yellow;
+    color: darkslateblue;
+    margin-bottom: 2rem;
+}
+
+.col-content{
+    padding: 3rem;
+}
+
+/* SectionB Part End */
+
+/* SectionC Part Start */
+
+#section_C{
+    background-color: darkblue;
+    color:darkorange;
+    padding: 10rem;
+}
+
+/* SectionC Part End */
+
+/* SectionD Part Start */
+
+#section_D{
+    color:wheat;
+}
+#section_D .box:first-child{
+    background-color: brown;
+}
+/* SectionD Part End */
+
+
+/* Footer Part Start */
+footer{
+  font-size: 4rem;  
+  padding: 3rem;
+  background: darkolivegreen;
+}
+
+footer a{
+    text-decoration: none;
+    color:yellow;
+}
+
+footer a:hover{
+    font-weight: bold;
+    color:wheat;
+}
+
+/* SectionD Part End */
