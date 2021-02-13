@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 
-html{
-    font-size: 10px;
+html {
+    font-size: 8px;
 }
 
-body{
+body {
     font-family: 'Dancing Script', cursive;
     font-size: 1.8rem;
     line-height: 1.6;
@@ -14,7 +14,7 @@ body{
     color: black;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -28,18 +28,25 @@ p {
     padding: 1.6rem 0;
 }
 
-img{
+img {
     width: 100%;
-    height: auto;
+    height: 300px;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 
 /* Header Part Start */
-header{
+header {
     height: 45rem;
 }
 
-header .bg-image{
-    position: absolute; /* all items will keep on the picture  */
+header .bg-image {
+    position: absolute;
+    /* all items will keep on the picture  */
     background-image: url(img/bg);
     background-position: center;
     background-size: cover;
@@ -54,24 +61,24 @@ header h1 {
     padding-bottom: 0;
 }
 
-.btn{
+.btn {
     display: inline-block;
     background: black;
-    color:wheat;
-    border:1px dotted 4rem;
+    color: wheat;
+    border: 1px dotted 4rem;
     margin: 0.5rem 0;
     transition: all 0.4s;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: wheat;
-    color:black;
+    color: black;
 }
 
 /* Header Part End */
 
 /* SectionA Part Start */
-#section_A{
+#section_A {
     background-color: wheat;
     color: darkred;
     padding: 2rem 0;
@@ -80,21 +87,22 @@ header h1 {
 /* SectionA Part End */
 
 /* SectionB Part Start */
-#section_B{
+#section_B {
     padding: 2rem;
 
 }
-#section_B ul{
-    list-style: none;    
+
+#section_B ul {
+    list-style: none;
 }
 
-#section_B li{
-    background-color: yellow;
-    color: darkslateblue;
+#section_B li {
+    background-color: lightsalmon;
+    color: black;
     margin-bottom: 2rem;
 }
 
-.col-content{
+.col-content {
     padding: 3rem;
 }
 
@@ -102,9 +110,9 @@ header h1 {
 
 /* SectionC Part Start */
 
-#section_C{
+#section_C {
     background-color: darkblue;
-    color:darkorange;
+    color: darkorange;
     padding: 10rem;
 }
 
@@ -112,30 +120,67 @@ header h1 {
 
 /* SectionD Part Start */
 
-#section_D{
-    color:wheat;
+#section_D {
+    color: wheat;
 }
-#section_D .box:first-child{
+
+#section_D .box:first-child {
     background-color: brown;
+}
+
+#section_D .box:last-child {
+    background-color: darkred;
 }
 /* SectionD Part End */
 
 
 /* Footer Part Start */
-footer{
-  font-size: 4rem;  
-  padding: 3rem;
-  background: darkolivegreen;
+footer {
+    font-size: 4rem;
+    padding: 3rem;
+    background: darkolivegreen;
+    color: yellow;
 }
 
-footer a{
+footer a {
     text-decoration: none;
-    color:yellow;
+    color: black;
 }
 
-footer a:hover{
+footer a:hover {
     font-weight: bold;
-    color:wheat;
+    color: wheat;
 }
 
 /* SectionD Part End */
+
+
+@media screen and (min-width:800px) {
+
+    html {
+        font-size: 10px;
+    }
+
+}
+/* Screens for higher than 800px Start */
+@media screen and (min-width:1200px) {
+    #section_B li {
+        width: 25%;
+        margin: 1%;
+        display: inline-block;
+    }
+
+    .box{
+        width: 50%;
+        float: left;
+    }
+    #section_D {
+        background: orange;
+    }
+    html {
+        font-size: 12px;
+    }
+}
+
+
+/* Screens for higher than 800px End */
