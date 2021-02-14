@@ -34,7 +34,7 @@ ul{
 }
 
 .container{
-    width: 1200px;
+    width: 1500px;
     margin: 0 auto;
     padding: 0 0.5rem;
 }
@@ -43,9 +43,10 @@ ul{
     text-transform: uppercase;
 }
 
+
 .img_fluid{
     max-width: 100%;
-    height: auto;
+    height: 250px;
     margin-bottom: 5rem;
 }
 
@@ -107,7 +108,7 @@ nav {
 
 header{
     background-color: cadetblue;
-    height: 1400px;
+    height: 1000px;
     padding-top: calc(112px + 10rem);
     padding-bottom: 112px;
     text-align: center;
@@ -129,9 +130,17 @@ header h1{
     color: #fff;
 }
 
-.star_light{
+hr.star_light{
+    border-color: #fff;
+}
+
+hr.star_dark{
+    border-color: #16212e;
+}
+
+.star_light,.star_dark{
     border: none;
-    border-top: .7rem solid #fff;
+    border-top: .7rem solid;
     max-width: 40rem;
     margin: 3rem auto;
     overflow: visible;
@@ -139,14 +148,79 @@ header h1{
 }
 
 .star_light::after{
+    background-color: #5F9EA0;
+    color: #fff;
+}
+
+.star_dark::after{
+    background-color: #fff;
+    color: #16212E;
+}
+
+.star_light::after,.star_dark::after{
     content: "\f587";
     font-family: "Font Awesome 5 Free";
-    color: #fff;font-weight: 900;
+    font-weight: 900;
     font-size: 4rem;
     position: relative;
     top: -12px;
-    background-color: #5F9EA0;
     padding: 0 1rem;
 }
 
 /* header end */
+
+/* Section Portfolio start */
+
+#portfolio{
+    height: 500px;
+    padding: 10rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#portfolio h2{
+    font-size: 5rem;
+    color: #16212e;
+    margin-bottom: 3rem;
+}
+
+.col{
+    float: left;
+    width: 25%;
+    padding: 1rem;
+}
+
+.portfolio_item{
+    height: 250px;
+    position: relative;
+}
+
+.portfolio_item img{
+    display: block;
+    width: 100%;
+}
+
+.image_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: peru;
+    opacity: 0;
+    transition: opacity .7s ease;
+}
+
+.image_overlay .icon{
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.portfolio_item:hover .image_overlay{
+    opacity: 0.6;
+}
+/* Section Portfolio end */
