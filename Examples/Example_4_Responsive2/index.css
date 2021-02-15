@@ -60,9 +60,15 @@ section{
     text-align: center;
 }
 
+
+
+.btn_large{
+    font-size: 3rem;
+    padding: 2.5rem 2rem;
+}
+
 .btn{
     margin-top: 4rem;
-    font-size: 3rem;
     padding: 2rem 1rem;
     font-weight: 700;
     display: inline-block;
@@ -70,6 +76,19 @@ section{
     border: 2px solid transparent;
     color: #fff;
     transition: all .5s;
+}
+
+.btn_large{
+    font-size: 3rem;
+    padding: 2.5rem 2rem;
+}
+
+.btn_social{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    line-height: 1rem;
 }
 
 .btn_outline{
@@ -200,7 +219,7 @@ hr.star_dark{
 }
 
 .star_light::after,.star_dark::after{
-    content: "\f587";
+    content: "\f70b";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: 4rem;
@@ -269,7 +288,7 @@ hr.star_dark{
 #about{
     background-color: #5F9EA0;
     color: white;
-    height: 600px;
+    height: 60rem;
 }
 
 #about h2{
@@ -303,7 +322,12 @@ hr.star_dark{
 
 /* Section Contact start */
 
+#contact{
+    height: 80rem;
+}
+
 #contact h2{
+    height: 10rem;
     font-size: 5rem;
     color: #16212e;
     margin-bottom: 3rem;
@@ -311,17 +335,15 @@ hr.star_dark{
 
 #contact_form {
     width: 70%;
-    height: 4rem;
+    height: 3rem;
     margin: 0 auto;
+    /*text-align: left;*/
 }
 
-#contact .form_group {
+.form_group {
     border-bottom: 1px solid gray;
     padding-bottom: 1rem;
-    margin-bottom: 4rem;
-    /*
-    text-align: left;
-    */
+    margin-bottom: 3rem;
 }
 
 
@@ -337,3 +359,39 @@ hr.star_dark{
 }
 
 /* Section Contact end */
+
+/* Section Footer start */
+
+footer{
+    height: 40rem;
+    position: static;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #293B4D;
+    color: #fff;
+    text-align: center;
+}
+
+footer h4   {
+    height: 10rem;
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+footer .col{
+    width: 33%;
+}
+
+footer p{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    line-height: 3rem;
+}
+
+footer li{
+    display: inline-block;
+    margin: 1rem;
+}
+
+/* Section Footer end */
