@@ -34,7 +34,7 @@ ul{
 }
 
 .container{
-    width: 1500px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 0.5rem;
 }
@@ -363,7 +363,7 @@ hr.star_dark{
 /* Section Footer start */
 
 footer{
-    height: 40rem;
+    height: 50rem;
     position: static;
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -395,3 +395,17 @@ footer li{
 }
 
 /* Section Footer end */
+
+
+/* Section Copyright start */
+
+.copyright{
+    background-color: #16212E;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+/* Section Copyright end */
