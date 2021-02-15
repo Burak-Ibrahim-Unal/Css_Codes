@@ -54,6 +54,47 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
 }
+
+section{
+    padding: 10rem 0;
+    text-align: center;
+}
+
+.btn{
+    margin-top: 4rem;
+    font-size: 3rem;
+    padding: 2rem 1rem;
+    font-weight: 700;
+    display: inline-block;
+    border-radius: 0.5rem;
+    border: 2px solid transparent;
+    color: #fff;
+    transition: all .5s;
+}
+
+.btn_outline{
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent;
+}
+
+.btn_outline:hover{
+    color: #293B4D;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.btn_primary{
+    background-color: #293B4D;
+    border-color: #fff;
+}
+
+.btn_primary:hover{
+    background-color: #fff;
+    color: #293B4D;
+    border-color: #293B4D;
+}
+
 /* navbar start */
 
 nav {
@@ -120,7 +161,8 @@ header h1{
     margin-bottom: 7rem;
 }
 
-header h2{
+header h2{    
+    padding: 10rem 0;
     color: #fff;
     font-size: 5rem;
     font-family: 'Tangerine', cursive;
@@ -172,10 +214,7 @@ hr.star_dark{
 /* Section Portfolio start */
 
 #portfolio{
-    height: 500px;
-    padding: 10rem 0;
     background-color: #fff;
-    text-align: center;
 }
 
 #portfolio h2{
@@ -224,3 +263,77 @@ hr.star_dark{
     opacity: 0.6;
 }
 /* Section Portfolio end */
+
+
+/* Section About start */
+#about{
+    background-color: #5F9EA0;
+    color: white;
+    height: 600px;
+}
+
+#about h2{
+    font-size: 5rem;
+}
+
+#about_text{
+    text-align: left;
+}
+
+#about_text .left{
+    float: left;
+    width: 50%;
+    padding-right: 2rem;
+    padding-left: 25rem;
+}
+
+#about_text .right{
+    float: right;
+    width: 50%;
+    padding-left: 2rem;
+    padding-right: 25rem;
+}
+
+#about_text .text{
+    font-size: 3rem;
+    line-height: 3rem;
+}
+/* Section About end */
+
+
+/* Section Contact start */
+
+#contact h2{
+    font-size: 5rem;
+    color: #16212e;
+    margin-bottom: 3rem;
+}
+
+#contact_form {
+    width: 70%;
+    height: 4rem;
+    margin: 0 auto;
+}
+
+#contact .form_group {
+    border-bottom: 1px solid gray;
+    padding-bottom: 1rem;
+    margin-bottom: 4rem;
+    /*
+    text-align: left;
+    */
+}
+
+
+#contact .form_group input,.form_group textarea{
+    border: none;
+    width: 100%;
+    font-size: 2.5rem;
+    display: block;
+}
+
+#contact .form_group input:focus{
+    outline: 0;
+}
+
+/* Section Contact end */
