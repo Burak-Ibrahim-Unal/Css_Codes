@@ -9,7 +9,7 @@
 }
 
 html {
-    font-size: 10px;
+    font-size: 6px;
 }
 
 body {
@@ -35,9 +35,21 @@ ul{
 
 .container{
     width: 100%;
-    margin: 0 auto;
-    padding: 0 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
+
+.col {
+    float: left;
+    width: 100%;
+    padding: 1rem;
+   max-width: 80rem;
+    height: 32rem;
+}
+
+
 
 .text_uppercase{
     text-transform: uppercase;
@@ -46,7 +58,7 @@ ul{
 
 .img_fluid{
     max-width: 100%;
-    height: 250px;
+    height: 30rem;
     margin-bottom: 5rem;
 }
 
@@ -56,16 +68,12 @@ h1,h2,h3,h4,h5,h6{
 }
 
 section{
-    padding: 10rem 0;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     text-align: center;
 }
 
 
-
-.btn_large{
-    font-size: 3rem;
-    padding: 2.5rem 2rem;
-}
 
 .btn{
     margin-top: 4rem;
@@ -76,10 +84,11 @@ section{
     border: 2px solid transparent;
     color: #fff;
     transition: all .5s;
+    cursor: pointer;
 }
 
 .btn_large{
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 2.5rem 2rem;
 }
 
@@ -106,12 +115,62 @@ section{
 .btn_primary{
     background-color: #293B4D;
     border-color: #fff;
+    padding: 1rem 1rem;
 }
 
 .btn_primary:hover{
     background-color: #fff;
     color: #293B4D;
     border-color: #293B4D;
+}
+
+/* Section Responsive start */
+
+
+
+@media screen and (min-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+    html {
+        font-size: 7px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+    html {
+        font-size: 8px;
+    }
+    .col {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+    html {
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    .container{
+        max-width: 1200px;
+    }
+    html {
+        font-size: 10px;
+    }
+    .col {
+        width: 33%;
+    }
+    footer .col{
+        width: 33%;
+    }
 }
 
 /* navbar start */
@@ -126,21 +185,21 @@ nav {
     z-index: 100;
 }
 
-#logo_box{
+#nav_links{
     float: left;
     padding: 1rem;
     margin-top: 1rem;
 }
 
+
 #logo_box .logo{
     color:#fff;
     font-weight: 700;
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 #nav_links{
     float: right;
-    margin-top: 1.6rem;
 }
 
 #nav_links .nav_item{
@@ -162,13 +221,51 @@ nav {
     color:aqua;
 }
 
+#nav_links .nav_icon{
+    display: none;
+}
+
+@media screen and (max-width: 992px){
+    #logo_box{  
+        float: none;  
+        text-align: left; 
+    }
+    #nav_links{
+        float: none;   
+    }
+
+    #nav_links.response li:not(:first-child){
+        display: none;   
+    }
+
+
+    #nav_links .nav_item{
+        float: none;
+        text-align: left;
+    }
+    #nav_links .nav_link{
+        font-size: 2rem;
+        padding-left: 0;
+    }
+
+    #nav_links .nav_icon{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        font-size: 3rem;
+    }
+
+
+}
+
 /* navbar end */
 
 /* header start */
 
 header{
     background-color: cadetblue;
-    height: 1000px;
+    height: 100rem;
     padding-top: calc(112px + 10rem);
     padding-bottom: 112px;
     text-align: center;
@@ -176,7 +273,7 @@ header{
 
 header h1{
     color: #fff;
-    font-size: 7rem;
+    /*font-size: 7rem;*/
     margin-bottom: 7rem;
 }
 
@@ -242,14 +339,9 @@ hr.star_dark{
     margin-bottom: 3rem;
 }
 
-.col{
-    float: left;
-    width: 25%;
-    padding: 1rem;
-}
 
 .portfolio_item{
-    height: 250px;
+    height: 30rem;
     position: relative;
 }
 
@@ -293,6 +385,7 @@ hr.star_dark{
 
 #about h2{
     font-size: 5rem;
+    margin-bottom: 3rem;
 }
 
 #about_text{
@@ -303,20 +396,54 @@ hr.star_dark{
     float: left;
     width: 50%;
     padding-right: 2rem;
-    padding-left: 25rem;
+    padding-left: 2rem;
 }
 
 #about_text .right{
     float: right;
     width: 50%;
     padding-left: 2rem;
-    padding-right: 25rem;
+    padding-right: 2rem;
 }
 
 #about_text .text{
-    font-size: 3rem;
+    font-size: 1.6rem;
     line-height: 3rem;
 }
+
+@media screen and (min-width: 576px){
+    #about_text .text{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #about_text .text{
+        font-size: 2.2rem;
+    }
+
+    #about_text .left{
+        padding-left: 6rem;
+    }
+
+    #about_text .right{
+        padding-right: 6rem;
+    }
+
+}
+
+@media screen and (min-width: 992px){
+    #about_text .left{
+        padding-left: 8rem;
+    }
+
+    #about_text .right{
+        padding-right: 8rem;
+    }
+
+}
+
+
 /* Section About end */
 
 
@@ -363,8 +490,7 @@ hr.star_dark{
 /* Section Footer start */
 
 footer{
-    height: 50rem;
-    position: static;
+    height: 100rem;
     padding-top: 6rem;
     padding-bottom: 6rem;
     background-color: #293B4D;
@@ -380,7 +506,7 @@ footer h4   {
 }
 
 footer .col{
-    width: 33%;
+    width: 100%;
 }
 
 footer p{
@@ -393,6 +519,30 @@ footer li{
     display: inline-block;
     margin: 1rem;
 }
+
+@media screen and (min-width: 768px){
+    footer .col{
+        width: 33%;
+    }
+    footer{
+        height: 50rem;
+    }
+
+}
+
+@media screen and (min-width: 992px){
+    footer .col{
+        width: 33%;
+    }
+
+}
+
+@media screen and (min-width: 1300px){
+    footer .col{
+        width: 33%;
+    }
+}
+
 
 /* Section Footer end */
 
@@ -409,3 +559,8 @@ footer li{
 }
 
 /* Section Copyright end */
+
+
+
+
+/* Section Responsive end */
