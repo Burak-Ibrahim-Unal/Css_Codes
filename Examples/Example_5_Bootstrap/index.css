@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: burlywood;
+    padding: 20px;
+}
+
+.item{
+    padding: 20px;
+    margin: 25px;
+    background-color:  darksalmon;
+    font-size: 30px;
+    color:indigo;
+}
